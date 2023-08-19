@@ -15,11 +15,11 @@ const App = () => {
           <Tech/>
           <Works/>
           <Feedbacks/>
-          <StarsCanvas/>
         <div className="relative z-0">
           <Contact/>
-          <StarsCanvas/>
         </div>
+        <StarsCanvas/>
+
       </div>
     </BrowserRouter>
   )
