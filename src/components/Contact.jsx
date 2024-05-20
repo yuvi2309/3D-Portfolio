@@ -32,17 +32,11 @@ const Contact = () => {
     setLoading(true);
 
     emailjs
-      .send(
-        service_3y8qyfh,
-        template_538pvhj,
-        {
-          from_name: form.name,
-          to_name: "Yuvraj",
-          from_email: form.email,
-          to_email: "dhakadyuvraj23@gmail.com",
-          message: form.message,
-        },
-        JOXRybxMCm7DMW-kd
+      .sendForm(
+        'service_nypzsys',
+        'template_538pvhj',
+        formRef.current,
+        'JOXRybxMCm7DMW-kd'
       )
       .then(
         () => {

@@ -27,9 +27,12 @@ import starbucks from "./company/starbucks.png";
 import stpl from "./company/STPL.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import textsummary from "./textsummary.jpg";
+import fashion from "./fashion.png";
+import nifty from "./nifty.jpg";
+import movieland from "./movieland.png";
+import movierecommend from "./movierecommend.jpeg";
+
 
 export {
   logo,
@@ -57,8 +60,9 @@ export {
   shopify,
   starbucks,
   stpl,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  textsummary,
+  movieland,
+  movierecommend,
+  fashion,
+  nifty,
 };

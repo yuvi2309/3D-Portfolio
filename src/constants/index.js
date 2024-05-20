@@ -18,12 +18,13 @@ import {
     meta,
     starbucks,
     stpl,
-    tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
+    textsummary,
     threejs,
+    fashion,
+    movieland,
+    movierecommend,
+    nifty
   } from "../assets";
   
   export const navLinks = [
@@ -122,19 +123,23 @@ import {
         "Developed an end-to-end text summarizer using Hugging Face's Transformers library, deployed on AWS. Implemented CI/CD pipelines for automated testing and seamless deployment. The project showcases expertise in NLP, cloud computing, and continuous integration.",
       tags: [
         {
-          name: "react",
+          name: "NLP",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Amazon AWS",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Docker",
           color: "pink-text-gradient",
         },
+        {
+          name: "NLTK",
+          color: "orange-text-gradient",
+        },
       ],
-      image: carrent,
+      image: textsummary,
       source_code_link: "https://github.com/",
     },
     {
@@ -143,19 +148,23 @@ import {
         "Implemented a deep learning project for fashion style transfer utilizing the VGG19 model and OpenCV. Applied techniques like GrabCut for precise image segmentation. The project highlights skills in deep learning, computer vision, and advanced image processing methods.",
       tags: [
         {
-          name: "nextjs",
+          name: "DL",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "VGG19",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "OpenCV",
           color: "pink-text-gradient",
         },
+        {
+          name: "Keras",
+          color: "orange-text-gradient",
+        },
       ],
-      image: tripguide,
+      image: fashion,
       source_code_link: "https://github.com/",
     },
     {
@@ -164,61 +173,73 @@ import {
         "Conducted a comprehensive price analysis of the Nifty 50 index using LSTM, ARIMA, and ARMA models. The project involved time series forecasting to predict stock trends. It demonstrates proficiency in financial data analysis and advanced statistical modeling techniques.",
       tags: [
         {
-          name: "react",
+          name: "Python",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "LSTM",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "ARIMA",
           color: "pink-text-gradient",
         },
+        {
+          name: "Numpy",
+          color: "orange-text-gradient",
+        },
       ],
-      image: jobit,
+      image: nifty,
       source_code_link: "https://github.com/",
     },
     {
       name: "MovieLand",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Implemented a movie browsing website using React.js, HTML, CSS, and JavaScript. Integrated TMDB API to fetch and display movie details. The project showcases expertise in front-end development and API integration for dynamic content delivery.",
       tags: [
         {
-          name: "nextjs",
+          name: "ReactJS",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "TMDB API",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "CSS",
           color: "pink-text-gradient",
         },
+        {
+          name: "API",
+          color: "orange-text-gradient",
+        },
       ],
-      image: tripguide,
+      image: movieland,
       source_code_link: "https://github.com/",
     },
     {
       name: "Movie Recommender System",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Developed a movie recommender system using machine learning and classification techniques. Leveraged the TMDB database and tokenization for data processing. This project highlights skills in recommendation algorithms and data preprocessing.",
       tags: [
         {
-          name: "nextjs",
+          name: "ML",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Classificaiton",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "TMDB",
           color: "pink-text-gradient",
         },
+        {
+          name: "Tokenization",
+          color: "orange-text-gradient",
+        },
       ],
-      image: tripguide,
+      image: movierecommend,
       source_code_link: "https://github.com/",
     }
   ];
