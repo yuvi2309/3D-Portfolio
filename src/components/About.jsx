@@ -50,8 +50,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px]
         max-w-3xl leading-[30px]">
-        I am a skilled software developer with extensive experience in TypeScript and JavaScript, specializing in frameworks like React, Node.js, and Three.js. With a keen aptitude for quick learning, I thrive on collaborating closely with clients to craft efficient, scalable, and user-friendly solutions that effectively address real-world challenges. I am not only a great team player but also a capable leader. I had the privilege of serving as the Overall Coordinator of the 'Cepheus' techfest at IIT Goa, an experience that honed my organizational and leadership skills. Armed with a commitment to excellence and innovation, I am enthusiastic about working together to bring your ideas to life.
-      </motion.p>
+          Hello! I'm Yuvraj Nagar, a recent B.Tech graduate in Computer Science and Engineering from IIT Goa. I excel in web development, possessing a strong command of both front-end and back-end technologies, including React, Tailwind CSS, Three.js, SQL, Django, and API development. As a quick learner and adept problem solver, I also bring exceptional management skills, demonstrated through my successful leadership as the Overall Coordinator of IIT Goa's inaugural offline technical fest, Cepheus. Explore my portfolio to discover my projects and learn more about my expertise. Let's connect and create something extraordinary together!      </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (

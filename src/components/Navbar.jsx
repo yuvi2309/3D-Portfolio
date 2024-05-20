@@ -25,7 +25,7 @@ const Navbar = () => {
           <p className="text-white text-[18px]
           font-bold cursor-pointer flex">Yuvraj &nbsp; 
           <span className="sm:block hidden">|
-          FullStack Developer</span></p>
+          IIT Goa</span></p>
         </Link>
         <ul className="list-none hidden sm:flex
         flex-row gap-10">

@@ -25,7 +25,7 @@ const Hero = () => {
           span></h1>
           <p className={`${styles.heroSubText} mt-2
           text-white-100`}>
-            Welcome to My Portfolio I hope you enjoy this webiste <br className="
+            Welcome to My Portfolio I hope you enjoy this website <br className="
             sm:block hidden" />
           </p>
         </div>
