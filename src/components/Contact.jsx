@@ -7,6 +7,8 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+import { linkedinIcon, gmailIcon, githubIcon } from "../assets";
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -115,6 +117,42 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+
+      <div className='mt-12 flex flex-col gap-2'>
+          <div className='mt-12 flex justify-center items-center gap-10'>
+
+          <a
+            href='https://www.linkedin.com/in/your-linkedin'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-white font-medium'
+            >
+           <img src={linkedinIcon} alt='LinkedIn' />
+          </a>
+          <a
+            href='mailto:your.email@gmail.com'
+            className='text-white font-medium'
+            >
+            <img src={gmailIcon} alt='Gmail' />
+          </a>
+          <a
+            href='https://github.com/your-github'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-white font-medium'
+            >
+            <img src={githubIcon} alt='GitHub' />
+          </a>
+          </div>
+          <div className='mt-12 flex justify-center items-center gap-4'>
+            <a
+              href='tel:your-phone-number'
+              className='blue-text-gradient font-medium'
+              >
+              +91 9770594125
+            </a>
+          </div>
+        </div>
       </motion.div>
 
       <motion.div

@@ -6,6 +6,9 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import linkedinIcon from "./linkedin.svg";
+import gmailIcon from "./gmail.svg";
+import githubIcon from "./github.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -32,6 +35,7 @@ import fashion from "./fashion.png";
 import nifty from "./nifty.jpg";
 import movieland from "./movieland.png";
 import movierecommend from "./movierecommend.jpeg";
+
 
 
 export {
@@ -65,4 +69,8 @@ export {
   movierecommend,
   fashion,
   nifty,
+  linkedinIcon,
+  githubIcon,
+  gmailIcon,
 };
+

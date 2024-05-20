@@ -140,7 +140,7 @@ import {
         },
       ],
       image: textsummary,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/yuvi2309/text-summarizer",
     },
     {
       name: "Fashion Style Transfer",
@@ -165,7 +165,7 @@ import {
         },
       ],
       image: fashion,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://www.kaggle.com/code/arazan/nash-cs435",
     },
     {
       name: "Nifty 50 Price Analysis",
@@ -190,7 +190,7 @@ import {
         },
       ],
       image: nifty,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/yuvi2309/Nifty-50-stock-price-Analysis",
     },
     {
       name: "MovieLand",
@@ -215,7 +215,7 @@ import {
         },
       ],
       image: movieland,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/yuvi2309/Movie_Browsing_Website",
     },
     {
       name: "Movie Recommender System",
