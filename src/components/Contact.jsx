@@ -122,21 +122,21 @@ const Contact = () => {
           <div className='mt-12 flex justify-center items-center gap-10'>
 
           <a
-            href='https://www.linkedin.com/in/your-linkedin'
+            href='https://www.linkedin.com/in/yuvrajnagar/'
             target='_blank'
             rel='noopener noreferrer'
             className='text-white font-medium'
             >
            <img src={linkedinIcon} alt='LinkedIn' />
           </a>
-          <a
-            href='mailto:your.email@gmail.com'
+          {/* <a
+            href='mailto:dhakadyuvraj23@gmail.com'
             className='text-white font-medium'
             >
             <img src={gmailIcon} alt='Gmail' />
-          </a>
+          </a> */}
           <a
-            href='https://github.com/your-github'
+            href='https://github.com/yuvi2309'
             target='_blank'
             rel='noopener noreferrer'
             className='text-white font-medium'
@@ -146,11 +146,17 @@ const Contact = () => {
           </div>
           <div className='mt-12 flex justify-center items-center gap-4'>
             <a
-              href='tel:your-phone-number'
+              href='tel:9770594125'
               className='blue-text-gradient font-medium'
               >
               +91 9770594125
             </a>
+            <a
+            href='mailto:dhakadyuvraj23@gmail.com'
+            className='blue-text-gradient font-medium'
+            >
+            dhakadyuvraj23@gmail.com
+          </a> 
           </div>
         </div>
       </motion.div>
