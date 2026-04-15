@@ -4,23 +4,19 @@ import {
     creator,
     web,
     javascript,
-    typescript,
-    html,
-    css,
+    python,
+    postgresql,
     reactjs,
-    redux,
+    figma,
     tailwind,
     nodejs,
-    mongodb,
     git,
-    figma,
-    docker,
-    meta,
-    starbucks,
+    jira,
+    notion,
+    postman,
+    dice,
     stpl,
-    shopify,
     textsummary,
-    threejs,
     fashion,
     movieland,
     movierecommend,
@@ -44,43 +40,55 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Product Management",
       icon: web,
     },
     {
-      title: "React Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
+      title: "System Design",
       icon: backend,
     },
     {
-      title: "ML/Enthusiast",
+      title: "AI & Automation",
       icon: creator,
+    },
+    {
+      title: "Fintech & Integrations",
+      icon: mobile,
     },
   ];
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
+      name: "Python",
+      icon: python,
     },
     {
-      name: "CSS 3",
-      icon: css,
+      name: "SQL",
+      icon: postgresql,
     },
     {
       name: "JavaScript",
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
+    },
+    {
+      name: "Figma",
+      icon: figma,
+    },
+    {
+      name: "Jira",
+      icon: jira,
+    },
+    {
+      name: "Notion",
+      icon: notion,
+    },
+    {
+      name: "Postman",
+      icon: postman,
     },
     {
       name: "Tailwind CSS",
@@ -91,26 +99,36 @@ import {
       icon: nodejs,
     },
     {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
+      name: "Git",
       icon: git,
-    }
+    },
   ];
   
   const experiences = [
     {
+      title: "Product Manager (Fintech)",
+      company_name: "Dice",
+      icon: dice,
+      iconBg: "#E8EAF6",
+      date: "2024 - Present",
+      points: [
+        "Leading product & system design for T&E, P2P, AP modules — building self-onboarding, scalable policy engines with multi-level configs, and table-based UI with templates and bulk actions.",
+        "Designed an integrated inventory system with GRN-based updates, approval-driven liquidation, access control, and reporting — treating offices as warehouses in a P2P model.",
+        "Exploring AI & automation: agent-based systems with LangChain, LLM-based OCR with configurable agents, and defining invoice automation rules & workflows.",
+        "Driving fintech expansion — working on Clear integration for invoice discounting, preparing NBFC partnerships, and handling SAP integrations.",
+        "Built notification center (Email + WhatsApp), structured feature/config flags, enabled bulk upload systems (CSV/Excel), and designed churn prediction using usage metrics.",
+      ],
+    },
+    {
       title: "Software Developer",
       company_name: "STPL",
       icon: stpl,
-      iconBg: "#383E56",
+      iconBg: "#E8EAF6",
       date: "June 2023 - Nov 2023",
       points: [
         "Gained proficiency with Trio Motion IDE and programmed PLCs to ensure seamless machine operation in the R&D Department.",
-        "Implemented robust state machine coding and applied OOP principles to develop a medical device manufacturing machine using TrioBasic and C# with .NET, enhancing productivity and reliability.",
-        "Helped in developing an OCR system for the company's use, utilizing open-source libraries such as Pandas, Numpy, and OpenCV for data processing.",
+        "Implemented robust state machine coding and applied OOP principles to develop a medical device manufacturing machine using TrioBasic and C# with .NET.",
+        "Built an OCR system utilizing Pandas, Numpy, and OpenCV for data processing.",
         "Worked on pattern recognition and data processing tasks, including feature learning, data cleaning, and creating datasets for edge cases.",
       ],
     }
@@ -120,24 +138,12 @@ import {
     {
       name: "Text Summarizer",
       description:
-        "Developed an end-to-end text summarizer using Hugging Face's Transformers library, deployed on AWS. Implemented CI/CD pipelines for automated testing and seamless deployment. The project showcases expertise in NLP, cloud computing, and continuous integration.",
+        "End-to-end text summarizer using Hugging Face Transformers, deployed on AWS with CI/CD pipelines for automated testing and seamless deployment.",
       tags: [
-        {
-          name: "NLP",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Amazon AWS",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Docker",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "NLTK",
-          color: "orange-text-gradient",
-        },
+        { name: "NLP", color: "blue-text-gradient" },
+        { name: "AWS", color: "green-text-gradient" },
+        { name: "Docker", color: "pink-text-gradient" },
+        { name: "NLTK", color: "orange-text-gradient" },
       ],
       image: textsummary,
       source_code_link: "https://github.com/yuvi2309/text-summarizer",
@@ -145,24 +151,12 @@ import {
     {
       name: "Fashion Style Transfer",
       description:
-        "Implemented a deep learning project for fashion style transfer utilizing the VGG19 model and OpenCV. Applied techniques like GrabCut for precise image segmentation. The project highlights skills in deep learning, computer vision, and advanced image processing methods.",
+        "Deep learning project for fashion style transfer using VGG19 model and OpenCV with GrabCut for precise image segmentation.",
       tags: [
-        {
-          name: "DL",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "VGG19",
-          color: "green-text-gradient",
-        },
-        {
-          name: "OpenCV",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Keras",
-          color: "orange-text-gradient",
-        },
+        { name: "Deep Learning", color: "blue-text-gradient" },
+        { name: "VGG19", color: "green-text-gradient" },
+        { name: "OpenCV", color: "pink-text-gradient" },
+        { name: "Keras", color: "orange-text-gradient" },
       ],
       image: fashion,
       source_code_link: "https://www.kaggle.com/code/arazan/nash-cs435",
@@ -170,24 +164,12 @@ import {
     {
       name: "Nifty 50 Price Analysis",
       description:
-        "Conducted a comprehensive price analysis of the Nifty 50 index using LSTM, ARIMA, and ARMA models. The project involved time series forecasting to predict stock trends. It demonstrates proficiency in financial data analysis and advanced statistical modeling techniques.",
+        "Comprehensive price analysis of Nifty 50 index using LSTM, ARIMA, and ARMA models for time series forecasting to predict stock trends.",
       tags: [
-        {
-          name: "Python",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "LSTM",
-          color: "green-text-gradient",
-        },
-        {
-          name: "ARIMA",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Numpy",
-          color: "orange-text-gradient",
-        },
+        { name: "Python", color: "blue-text-gradient" },
+        { name: "LSTM", color: "green-text-gradient" },
+        { name: "ARIMA", color: "pink-text-gradient" },
+        { name: "Numpy", color: "orange-text-gradient" },
       ],
       image: nifty,
       source_code_link: "https://github.com/yuvi2309/Nifty-50-stock-price-Analysis",
@@ -195,49 +177,25 @@ import {
     {
       name: "MovieLand",
       description:
-        "Implemented a movie browsing website using React.js, HTML, CSS, and JavaScript. Integrated TMDB API to fetch and display movie details. The project showcases expertise in front-end development and API integration for dynamic content delivery.",
+        "Movie browsing website built with React.js, integrating TMDB API to fetch and display movie details with dynamic content delivery.",
       tags: [
-        {
-          name: "ReactJS",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "TMDB API",
-          color: "green-text-gradient",
-        },
-        {
-          name: "CSS",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "API",
-          color: "orange-text-gradient",
-        },
+        { name: "ReactJS", color: "blue-text-gradient" },
+        { name: "TMDB API", color: "green-text-gradient" },
+        { name: "CSS", color: "pink-text-gradient" },
+        { name: "API", color: "orange-text-gradient" },
       ],
       image: movieland,
       source_code_link: "https://github.com/yuvi2309/Movie_Browsing_Website",
     },
     {
-      name: "Movie Recommender System",
+      name: "Movie Recommender",
       description:
-        "Developed a movie recommender system using machine learning and classification techniques. Leveraged the TMDB database and tokenization for data processing. This project highlights skills in recommendation algorithms and data preprocessing.",
+        "Movie recommender system using ML classification techniques with TMDB database and tokenization for data processing.",
       tags: [
-        {
-          name: "ML",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Classificaiton",
-          color: "green-text-gradient",
-        },
-        {
-          name: "TMDB",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Tokenization",
-          color: "orange-text-gradient",
-        },
+        { name: "ML", color: "blue-text-gradient" },
+        { name: "Classification", color: "green-text-gradient" },
+        { name: "TMDB", color: "pink-text-gradient" },
+        { name: "Tokenization", color: "orange-text-gradient" },
       ],
       image: movierecommend,
       source_code_link: "https://github.com/",
@@ -245,4 +203,3 @@ import {
   ];
   
   export { services, technologies, experiences, projects };
-  

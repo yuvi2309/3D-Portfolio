@@ -1,0 +1,28 @@
+<svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#4A67B2"/>
+
+  <!-- Stylized "d" icon -->
+  <g transform="translate(20,20)">
+    <!-- Outer shape -->
+    <path d="
+      M30,0
+      A30,30 0 1,0 30,60
+      L45,60
+      A45,45 0 1,1 45,0
+      Z
+    " fill="white"/>
+    
+    <!-- Dot -->
+    <rect x="60" y="0" width="10" height="10" fill="white"/>
+  </g>
+
+  <!-- Text "dice" -->
+  <text x="110" y="65"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="50"
+        fill="white"
+        letter-spacing="2">
+    dice
+  </text>
+</svg>

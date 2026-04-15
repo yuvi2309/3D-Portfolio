@@ -23,20 +23,24 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import python from "./tech/python.svg";
+import postgresql from "./tech/postgresql.svg";
+import jira from "./tech/jira.svg";
+import notion from "./tech/notion.svg";
+import postman from "./tech/postman.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import stpl from "./company/STPL.png";
 import tesla from "./company/tesla.png";
+import dice from "./company/dice.svg";
 
 import textsummary from "./textsummary.jpg";
 import fashion from "./fashion.png";
 import nifty from "./nifty.jpg";
 import movieland from "./movieland.png";
 import movierecommend from "./movierecommend.jpeg";
-
-
 
 export {
   logo,
@@ -60,10 +64,17 @@ export {
   tailwind,
   typescript,
   threejs,
+  python,
+  postgresql,
+  jira,
+  notion,
+  postman,
   meta,
   shopify,
   starbucks,
   stpl,
+  tesla,
+  dice,
   textsummary,
   movieland,
   movierecommend,
