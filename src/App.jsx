@@ -209,7 +209,32 @@ const App = () => {
     return () => window.removeEventListener("mousemove", move);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = glassActive ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [glassActive]);
+
   /* ── Liquid Glass VFX toggle ── */
+  const restoreContentVisibility = useCallback(() => {
+    const el = contentRef.current;
+    if (!el) return;
+
+    el.style.opacity = "";
+    el.style.visibility = "";
+    el.style.margin = "";
+    el.style.width = "";
+    el.style.boxSizing = "";
+
+    const wrapper = el.closest("canvas[layoutsubtree]");
+    if (wrapper?.parentNode) {
+      wrapper.parentNode.insertBefore(el, wrapper);
+      wrapper.remove();
+    }
+  }, []);
+
   const destroyGlass = useCallback(() => {
     if (glassRafRef.current) {
       cancelAnimationFrame(glassRafRef.current);
@@ -223,9 +248,9 @@ const App = () => {
       try { vfxRef.current.destroy(); } catch (e) { /* ignore */ }
       vfxRef.current = null;
     }
-    // Force-remove any leftover VFX canvases
-    document.querySelectorAll("canvas[data-vfx]").forEach((c) => c.remove());
-  }, []);
+    document.body.style.overflow = "";
+    restoreContentVisibility();
+  }, [restoreContentVisibility]);
 
   useEffect(() => {
     if (!glassActive) {
@@ -311,11 +336,19 @@ const App = () => {
         },
       });
 
-      if (cancelled) return;
-      await vfx.addHTML(el, { shader: "none" });
-      if (cancelled) { try { vfx.destroy(); } catch(e) {} return; }
-      vfx.play();
       vfxRef.current = vfx;
+
+      if (cancelled) {
+        destroyGlass();
+        return;
+      }
+
+      await vfx.addHTML(el, { shader: "none" });
+      if (cancelled) {
+        destroyGlass();
+        return;
+      }
+      vfx.play();
     })().catch(console.error);
 
     return () => { cancelled = true; destroyGlass(); };
@@ -341,13 +374,13 @@ const App = () => {
         <Contact />
       </div>
 
-      {/* Glass mode toggle — outside VFX target so always clickable */}
+      {/* Glass mode toggle / exit */}
       <button
         onClick={() => setGlassActive((v) => !v)}
-        className="glass-toggle fixed bottom-8 left-8 z-[9997] flex items-center gap-2 px-4 py-2.5 rounded-full border backdrop-blur-sm cursor-pointer transition-all duration-500"
+        className={`glass-toggle fixed z-[10001] flex items-center gap-2 px-4 py-2.5 rounded-full border backdrop-blur-sm cursor-pointer transition-all duration-500 ${glassActive ? "top-6 left-6" : "bottom-8 left-8"}`}
         style={{
           borderColor: glassActive ? "rgba(168,85,247,0.4)" : "rgba(0,0,0,0.08)",
-          background: glassActive ? "rgba(168,85,247,0.1)" : "rgba(255,255,255,0.8)",
+          background: glassActive ? "rgba(168,85,247,0.16)" : "rgba(255,255,255,0.8)",
         }}
       >
         <span
